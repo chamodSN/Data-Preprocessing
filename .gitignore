@@ -1,0 +1,43 @@
+# Ignore Python-related files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+
+# Ignore PyCharm-specific files
+.idea/
+*.iml
+
+# Ignore large datasets and raw data files (keep only processed data if needed)
+data/*.csv
+data/*.xlsx
+data/*.json
+!data/processed_*.csv  # Include processed data if you want to version control it
+
+# Ignore generated reports and images (unless you want to version control final outputs)
+report/*.docx
+report/*.png
+report/*.pdf
+!report/final_report.docx  # Include final report if desired
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
+
+# Ignore log files
+*.log
+
+# Ignore virtual environment files (if not already covered)
+env/
+venv/
+
+# Ignore Git-specific files (if any)
+.git
+.gitignore
